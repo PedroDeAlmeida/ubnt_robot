@@ -1,0 +1,1 @@
+cfgmtd -w -p /etc/
