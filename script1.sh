@@ -13,9 +13,10 @@ echo "*** Inserindo nova configuracao ***"
 echo "discovery.cdp.status=$opcao" >> /tmp/tempconfig
 echo "discovery.status=$opcao" >> /tmp/tempconfig
 
+mv /tmp/tempconfig /tmp/system.cfg
+
 echo "*** Sanvando na Flash ***"
 cfgmtd -w -p /etc/
-save
 
 echo "*** Reiniciando ***"
 reboot
