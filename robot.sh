@@ -4,7 +4,7 @@
 port=22
 network="172.16.17."
 ipfinal=254
-
+espera=30
 
 #-----------------------------------------------------
 user=marciel
@@ -17,7 +17,7 @@ do
         ip=$((ip+1))
 done
 
-sleep 120
+sleep $espera
 echo '' > /home/veloce/.ssh/known_hosts
 #-----------------------------------------------------
 
@@ -32,7 +32,7 @@ do
         ip=$((ip+1))
 done
 
-sleep 120
+sleep $espera
 echo '' > /home/veloce/.ssh/known_hosts
 #-----------------------------------------------------
 
@@ -47,7 +47,7 @@ do
         ip=$((ip+1))
 done
 
-sleep 120
+sleep $espera
 echo '' > /home/veloce/.ssh/known_hosts
 #-----------------------------------------------------
 
@@ -62,6 +62,6 @@ do
         ip=$((ip+1))
 done
 
-sleep 120
+sleep $espera
 echo '' > /home/veloce/.ssh/known_hosts
 #-----------------------------------------------------
